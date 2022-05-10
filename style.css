@@ -1,0 +1,411 @@
+/* =================
+   Global styles
+================= */
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.test {
+  background: #FF512F;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F09819, #FF512F);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body {
+background: #005AA7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #FFFDE4, #005AA7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #FFFDE4, #005AA7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'navbar'
+    'mainpage'
+    'footer';
+}
+
+main {
+  grid-area: mainpage;
+  margin-bottom: 1em;
+  
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+label {
+  margin-right: 7px;
+}
+
+
+/* =================
+   Navbar
+================= */
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  height: 125px;
+  min-width: 430px;
+  background-color: #1f1c18;
+}
+
+.logo-all {
+  display: flex;
+  align-items: center;
+  margin: 1.5em 0;
+}
+
+.logo-name {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.logo-img {
+  margin-right: 5px;
+}
+
+.menu-items {
+  display: flex;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+a:-webkit-any-link {
+  color:#fff;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+.menu-items li {
+  list-style: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding: 0 10px;
+}
+
+.menu-items li:after {
+  content: "";
+  position: absolute;
+  background-color: #0b5c72;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.menu-items li:hover,
+.menu-items li:focus,
+a:hover,
+a:focus,
+.logo-name:hover,
+.logo-name:focus {
+  color: #0575e6;
+  cursor: pointer;
+}
+
+.menu-items li:hover:after,
+.menu-items li:focus:after {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    max-height: 100px;
+    padding: 0 30px;
+  }
+  .logo-all {
+    margin: 0;
+  }
+  .menu-items {
+    margin: 0 2.5em 0;
+  }
+}
+
+/* =================
+   Footer
+================= */
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  height: 100px;
+  width: 100%;
+  bottom: 0px;
+
+}
+
+.social-contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 35px;
+}
+
+.social-contacts li a {
+  margin-right: 60px;
+  font-size: 24px;
+  color: white;
+
+}
+
+.social-contacts li:hover {
+  background-color: rgba(104, 97, 211, 0.432);
+  transform: translateY(-10px);
+}
+
+.footer {
+  color: white;
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+/* =================
+   Countdown
+================= */
+select,
+#years {
+  margin-right: 15px;
+  width: 65px;
+}
+
+
+#descripton-date {
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+}
+
+
+.title-project {
+  margin: 1em;
+  color: rgb(18, 21, 194);
+}
+
+.tittle-date {
+  margin: 0.75em;
+  color: rgba(2, 40, 209, 0.75);
+}
+
+.container-user-selection {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.container-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.countdown-section {
+  margin-top: 1em;
+
+}
+
+.countdown-display {
+  padding: 10px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.countdown-box {
+  padding: 25px;
+  border-radius: 3px;
+  background: rgb(84, 141, 96);
+  height: 45px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.countdown-specific {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+}
+
+.countdown-specific p {
+  color: #000;
+
+}
+
+#demo {
+  color: rgb(92, 3, 3);
+  font-weight: 700;
+}
+
+.container-countdown,
+.date-app-container {
+  border: 10px solid rgb(13, 68, 2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  color: rgb(63, 38, 38);
+  width: 100%;
+}
+
+.btn {
+  margin: 0 auto;
+  width: 100px;
+  height: 30px;
+  padding-top: 7px 0;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: #0575e6;
+}
+
+/* =================
+   Days Calculator
+================= */
+.date-app-container {
+  margin: 20px 0;
+
+}
+
+.dates-container {
+  display: flex;
+
+}
+
+.date-box {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 10px;
+}
+
+.date-box input {
+  height: 30px;
+}
+
+#submit {
+  margin-top: 1.75em;
+  margin-left: 0.5em;
+  align-self: flex-end;
+}
+
+.titles-date-app {
+  margin-bottom: 10px;
+}
+
+.titles-date-app h2 {
+  margin-bottom: 5px;
+}
+
+/* =================
+   Media Queries
+================= */
+
+@media (max-width: 750px) {
+  .social-contacts li a {
+    font-size: 18px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .social-contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    height: 180px;
+  }
+
+  .social-contacts li {
+    margin-bottom: 5px;
+  }
+  .container-user-selection {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .countdown-specific {
+    margin: 0 10px;
+  }
+  .dates-container {
+    flex-direction: column;
+  }
+  .select {
+    display: flex;
+    padding: 5px;
+  }
+    .container-countdown,
+    .date-app-container {
+      width: 90%;
+    }
+
+}
+
+@media (min-height: 900px) {
+
+  footer,
+  main {
+    margin-top: 50px;
+  }
+
+}
+
+@media (min-height: 1100px) {
+
+  footer,
+  main {
+    margin-top: 200px;
+  }
+}
+
+@media (min-height: 1200px) {
+
+  footer,
+  main {
+    margin-top: 390px;
+  }
+}

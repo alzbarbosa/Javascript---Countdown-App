@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--human-readable text-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--maximum-scale limits user to zoom-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/51ff4837a4.js" crossorigin="anonymous"></script>
+    <title>Calculator App</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-all">
+            <img class="logo-img" src="./images/javascript-logo.png" alt="logo-jascript" width=25px height="auto"/>
+            <h3 class="logo-name">JAVASCRIPT PROJECTS</h3>
+        </div>
+        <ul class="menu-items">
+            <li><a href="./home.html">Home</a></li>
+            <li>Projects</li>
+            <li>About Me</li>
+        </ul>
+    </nav>
+    <main class="container-selection">
+          
+            <h1 class="title-project">COUNTDOWN AND FIND DAYS</h1>
+            <div class="container-countdown">
+            <h2>Countdown</h2>
+            <h3 class="tittle-date">Inform the special date that you are looking for:</h3>
+            <div class="container-user-selection">
+                <div class="select">
+                <label>Month</label>
+                <select name="months" id="months">
+                    <option value="1">Jan</option>
+                    <option value="2">Feb</option>
+                    <option value="3">Mar</option>
+                    <option value="4">Apr</option>
+                    <option value="5">May</option>
+                    <option value="6">Jun</option>
+                    <option value="7">Jul</option>
+                    <option value="8">Aug</option>
+                    <option value="9">Sep</option>
+                    <option value="10">Oct</option>
+                    <option value="11">Nov</option>
+                    <option value="12">Dec</option>
+                </select>
+                </div>
+
+
+                <div class="select">
+                <label>Day</label>
+                <select name="days" id="days">
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                </div>
+                <div class="select">
+                <label>Year</label>
+                <input type="number" placeholder="2022" id="years" min="2022" max="2122" />
+                </div>
+            </div>
+            <br>
+            <input type="text" placeholder="e.g. my birthday" id="descripton-date" />
+            <br>
+            <button id="btn-start" class="btn">Start</button>
+        
+            <div class="countdown-section">
+                <h3 class="count-title">How long time for</h3>
+                <h3 id="date-user">the special event?</h3>
+                <div class="countdown-display">
+                    <div class="countdown-specific">
+                        <span id="day" class="countdown-box"></span>
+                        <p>Days</p>
+                    </div>
+        
+                    <div class="countdown-specific">
+                        <span id="hour" class="countdown-box"></span>
+                        <p>Hours</p>
+                    </div>
+        
+                    <div class="countdown-specific">
+                        <span id="minute" class="countdown-box"></span>
+                        <p>Minutes</p>
+                    </div>
+        
+                    <div class="countdown-specific">
+                        <span id="second" class="countdown-box"></span>
+                        <p>Seconds</p>
+                    </div>
+                </div>
+        
+        
+            </div>
+            <div id="demo"></div>
+            </div>
+
+                <div class="date-app-container">
+                    <div class="titles-date-app">
+                    <h2>Days Calculator</h2>
+                    <h3>Find how many days between start date and end date</h3>
+                    </div>
+                    <div class="dates-container">
+                        <div class="date-box">
+                            <label for="date-start">Start Date</label>
+                            <input type="date" id="date-start" />
+                        </div>
+                        <div class="date-box">
+                            <label for="date-end">End Date</label>
+                            <input type="date" id="date-end" />
+                        </div>
+                        <button id="submit" class="btn">Submit</button>
+                    </div>
+                    
+                    <div id="output">Select the dates to get started</div>
+                </div>
+        
+
+    </main>
+
+    <footer>
+        <ul class="social-contacts">
+            <li>
+                <a href="www.linkedin.com/in/andre-barbosa-b4933114a">
+                    <i class="fab fa-linkedin"></i>
+        
+                    LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=100022024270844">
+                    <i class="fab fa-facebook"></i>
+        
+                    Facebook</a>
+            </li>
+            <li>
+                <a href="https://github.com/alzbarbosa">
+                    <i class="fab fa-github"></i>
+        
+                    Github</a>
+            </li>
+        
+            <li>
+                <a href="https://codepen.io/aquarius83">
+                    <i class="fab fa-codepen"></i>
+        
+                    CodePen</a>
+            </li>
+        </ul>
+        <h6 class="footer">&copy; 2022 Andre Barbosa</h6>
+        
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
