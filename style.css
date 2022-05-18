@@ -386,26 +386,20 @@ select,
 }
 
 @media (min-height: 900px) {
-
-  footer,
   main {
-    margin-top: 50px;
+    min-height: 800px;
   }
 
 }
 
 @media (min-height: 1100px) {
-
-  footer,
   main {
-    margin-top: 200px;
+    min-height: 1000px;
   }
 }
 
 @media (min-height: 1200px) {
-
-  footer,
   main {
-    margin-top: 390px;
+    min-height: 1200px;
   }
 }
